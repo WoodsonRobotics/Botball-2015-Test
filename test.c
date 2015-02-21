@@ -1,3 +1,4 @@
+//follow a black line
 void linefollow() {
 	int light;
 	while (1) {
