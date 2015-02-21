@@ -13,6 +13,7 @@ void linefollow() {
 	}
 }
 */
+void linefollow();
 int main () {
 	mav(0,500);
 	mav(2,500);
