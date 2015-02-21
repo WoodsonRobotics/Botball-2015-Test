@@ -3,16 +3,16 @@ void linefollow() {
 	while (1) {
 		light = analog10(5);
 		if (light > 700) { //assume black line
-			motor(0,2500);
+			motor(0,250);
 			msleep(1000);
-			motor(0,5000);
-			motor(2,2500);
+			motor(0,500);
+			motor(2,250);
 		}
 	}
 }
 int main () {
-	motor(0,5000);
-	motor(2,5000);
+	motor(0,500);
+	motor(2,500);
 	linefollow();
 	
 	return 0;
