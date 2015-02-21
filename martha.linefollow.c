@@ -4,12 +4,12 @@
 #define lightPort 5
 
 void turn_L() {
-	motor(leftWheel,70);
-	motor(rightWheel,45);  	
+	mav(leftWheel,500);
+	motor(rightWheel,250);  	
 }
 void turn_R() {
-	motor(leftWheel,45);
-	motor(rightWheel,70);
+	mav(leftWheel,250);
+	mav(rightWheel,500);
 }
 int isOnLine() {
 	if (analog10(lightPort) > 700) { // > 700 is ON THE LINE
