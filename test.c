@@ -1,4 +1,5 @@
 //follow a black line
+/*
 void linefollow() {
 	int light;
 	while (1) {
@@ -11,6 +12,7 @@ void linefollow() {
 		}
 	}
 }
+*/
 int main () {
 	mav(0,500);
 	mav(2,500);

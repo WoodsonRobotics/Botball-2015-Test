@@ -43,8 +43,3 @@ int linefollow() {
 	return 0;
 	
 }
-
-int main () {
-	move(100,1);
-	linefollow();
-}
