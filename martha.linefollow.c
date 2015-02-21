@@ -4,12 +4,12 @@
 #define lightPort 5
 
 void turn_L() {
-	motor(leftWheel,-70);
-	motor(rightWheel,-45);  	
+	motor(leftWheel,70);
+	motor(rightWheel,45);  	
 }
 void turn_R() {
-	motor(leftWheel,-45);
-	motor(rightWheel,-70);
+	motor(leftWheel,45);
+	motor(rightWheel,70);
 }
 int isOnLine() {
 	if (analog10(lightPort) > 700) { // > 700 is ON THE LINE
@@ -28,11 +28,11 @@ void move(int speed, float seconds) {
 
 }
 
-int linefollow() {
+void linefollow() {
 	printf("testing line following");
 	while(1) {
 		if (isOnLine() == 1) {
-			mav(rightWheel, -500);
+			mav(rightWheel, 100);
 			mav(leftWheel, 500);
 		} else {
 				turn_R();
@@ -40,6 +40,4 @@ int linefollow() {
 		  }
 		
 	}
-	return 0;
-	
 }
