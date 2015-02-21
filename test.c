@@ -6,7 +6,7 @@ void linefollow() {
 		if (light > 700) { //black line
 			mav(2,500); //works better with this but inefficient 
 			mav(0,100);
-			msleep(1500);
+			msleep(1000);
 			mav(0,500);
 			mav(2,100);
 		}
