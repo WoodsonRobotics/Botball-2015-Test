@@ -1,24 +1,18 @@
 void linefollow() {
 	int light;
-	int oldlight;
 	while (1) {
-		int light = analog10(5);
+		light = analog10(5);
 		if (light > 700) { //assume black line
-			motor(0,250);
+			motor(0,2500);
 			msleep(1000);
-			motor(0,1000);
-			motor(2,250);
-			light = analog10(5);
-			while (!(light > 700)) {
-				light = analog10(5);
-			}
+			motor(0,5000);
+			motor(2,2500);
 		}
-		oldlight = light;
 	}
 }
 int main () {
-	motor(0,1000);
-	motor(2,1000);
+	motor(0,5000);
+	motor(2,5000);
 	linefollow();
 	
 	return 0;
