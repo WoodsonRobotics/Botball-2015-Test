@@ -1,7 +1,7 @@
 void linefollow() {
 	int light;
 	while (1) {
-		light = analog10(5);
+		light = analog(5);
 		if (light > 700) { //assume black line
 			mav(0,100);
 			msleep(500);
